@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'LarishNeue';
+    src: url(../fonts/Larish\ Neue\ Semibold.woff2);
+    src: url(../fonts/LarishNeueSemibold.woff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 6rem;
+    font-family: 'LarishNeue';
+    line-height: 0.75;
+}
+
+h2 {
+    font-size: 8rem;
+    font-family: 'LarishNeue';
+}
+
+p {
+    line-height: 2;
+    font-size: 2rem;
+}
+
+span {
+    font-size: 2rem;
+}

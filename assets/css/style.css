@@ -1,0 +1,314 @@
+@font-face {
+  font-family: "LarishNeue";
+  src: url(../fonts/Larish\ Neue\ Semibold.woff2);
+  src: url(../fonts/LarishNeueSemibold.woff);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 6rem;
+  font-family: "LarishNeue";
+  line-height: 0.75;
+}
+
+h2 {
+  font-size: 8rem;
+  font-family: "LarishNeue";
+}
+
+p {
+  line-height: 2;
+  font-size: 2rem;
+}
+
+span {
+  font-size: 2rem;
+}
+
+/* ====== HEADER ====== */
+header {
+  background-color: black;
+  color: white;
+}
+header article {
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+}
+header article div {
+  width: 50%;
+  height: 20vh;
+}
+header article div:nth-of-type(1) {
+  border-right: 1px solid white;
+}
+header .calling {
+  text-align: center;
+  padding-top: 20vh;
+  border-right: 1px white;
+}
+header .calling h1 + h1 {
+  color: black;
+  -webkit-text-stroke: 2px white;
+}
+header .calling p {
+  padding: 2vh 0;
+}
+header .logo {
+  display: flex;
+  justify-content: space-between;
+  padding: 15vh 10% 20vh 10%;
+}
+header .logo .rsvp {
+  text-decoration: none;
+  color: white;
+  font-size: 3rem;
+  border: 1px solid white;
+  padding: 15px;
+}
+header .logo .rsvp:hover {
+  background-color: lightgray;
+  color: black;
+}
+header .bearLogo {
+  width: 10%;
+}
+
+/* ====== MAIN ====== */
+main .section1 {
+  padding: 10vh 0 0 10%;
+  color: white;
+  background-color: black;
+}
+main .section1 article {
+  background: url(../img/map.svg) right top/40% auto no-repeat;
+  padding: 10vh 0;
+}
+main .section1 article div p {
+  padding: 3vh 0 0 0%;
+}
+main .section2 {
+  position: relative;
+}
+main .section2 article:nth-of-type(1) {
+  width: 55%;
+  margin: 0 auto;
+  padding-bottom: 110vh;
+  padding-left: 12%;
+}
+main .section2 article:nth-of-type(1) h2 {
+  padding: 60vh 0 2vh 0;
+}
+main .section2 article:nth-of-type(2) {
+  width: 55%;
+  margin: 0 auto;
+  padding: 0 0 40vh 12%;
+}
+main .section2 img {
+  position: absolute;
+}
+main .section2 .action1 {
+  width: 28%;
+  top: -2vh;
+  left: 60%;
+}
+main .section2 .action2 {
+  width: 18%;
+  top: 48vh;
+  right: 80%;
+  left: 4%;
+}
+main .section2 .action3 {
+  width: 16%;
+  right: 0%;
+  top: 90vh;
+}
+main .section2 .action4 {
+  width: 28%;
+  top: 140vh;
+  left: 20%;
+}
+main .section2 .action5 {
+  width: 24%;
+  top: 160vh;
+  right: 10%;
+}
+main .section2 .action6 {
+  width: 18%;
+  top: 220vh;
+  left: 0%;
+}
+main .section2 .action7 {
+  top: 248vh;
+  left: 50%;
+  width: 30%;
+  z-index: 1;
+}
+main .section3 {
+  background-color: black;
+  color: white;
+  padding-bottom: 80vh;
+  position: relative;
+}
+main .section3 .text {
+  display: flex;
+  justify-content: space-between;
+  padding: 28vh 0 20vh 0;
+}
+main .section3 .text div:nth-of-type(1) {
+  padding: 0 20% 0 10%;
+}
+main .section3 .text div:nth-of-type(2) p:nth-of-type(1) {
+  padding-bottom: 2.5vh;
+  padding-right: 12%;
+  font-size: 3rem;
+  font-weight: 600;
+}
+main .section3 img {
+  position: absolute;
+}
+main .section3 img:nth-of-type(1) {
+  width: 45%;
+  left: 20%;
+  top: 120vh;
+}
+main .section3 img:nth-of-type(2) {
+  width: 25%;
+  left: 60%;
+  top: 133vh;
+}
+main .section4 {
+  position: relative;
+  overflow: hidden;
+}
+main .section4 .animationCircle img {
+  position: absolute;
+  z-index: 2;
+  width: 20%;
+  top: -28vh;
+  left: 80%;
+  animation-name: circle;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+main .section4 .text {
+  display: flex;
+  justify-content: space-between;
+  padding: 45vh 0 120vh 0;
+}
+main .section4 .text #divbox {
+  padding: 0 10% 0 10%;
+}
+main .section4 .text div:nth-of-type(3) p:nth-of-type(1) {
+  padding-bottom: 2.5vh;
+  padding-right: 5%;
+  font-size: 3rem;
+  font-weight: 600;
+}
+main .section4 img {
+  padding-top: 20vh;
+  position: absolute;
+  z-index: 1;
+}
+main .section4 #rosebear {
+  width: 45%;
+  top: 100vh;
+  left: 43%;
+}
+main .section4 img:nth-of-type(2) {
+  width: 30%;
+  top: 107vh;
+  left: 20%;
+}
+
+/* ====== FOOTER ====== */
+footer .section5 {
+  position: relative;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+footer .section5 .join {
+  padding: 10vh 60% 0 10%;
+}
+footer .section5 .join p {
+  padding: 4vh 0;
+  font-size: 4rem;
+  font-weight: 600;
+}
+footer .section5 .join .rsvp {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  border: 1px solid white;
+  padding: 12px;
+}
+footer .section5 .join .rsvp:hover {
+  background-color: lightgray;
+  color: black;
+}
+footer .section5 .socialmedia {
+  display: flex;
+  justify-content: space-between;
+  padding: 10vh;
+}
+footer .section5 .socialmedia div:nth-of-type(1) {
+  padding-left: 5%;
+}
+footer .section5 .socialmedia div:nth-of-type(1) img {
+  width: 40px;
+  padding: 10px 5px;
+}
+footer .section5 .socialmedia div:nth-of-type(2) {
+  padding-right: 10%;
+}
+footer .section5 .socialmedia div:nth-of-type(2) img {
+  width: 110px;
+  padding: 0 10px;
+}
+footer .section5 .banner {
+  position: relative;
+  transform: rotate(45deg);
+  color: white;
+  -webkit-text-stroke: 2px black;
+}
+footer .section5 .banner h1 {
+  position: absolute;
+  background-color: lightgray;
+  animation-name: banner;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  top: -140vh;
+  padding: 10px;
+}
+footer .section5 .banner h1 span {
+  font-size: 10rem;
+  color: black;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(360eg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
